@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script defer src="./main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="game-container">
+
+        
+        <div class="player-buttons">
+
+            <div class="xo-container">
+                    <span class="x-icon">X</span>
+                    <span class="o-icon">O</span>
+            </div>
+                <button class="player-btn">X turn</button>
+            <div class="reload-button">
+                    <i class="fas fa-redo"></i>
+            </div>
+        </div>
+        
+
+ 
+        <div class="game-board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+ 
+        <div class="button-container">
+            <button class="score-button x-button">X (YOU)<br>0</button>
+            <button class="score-button ties-button">TIES<br>0</button>
+            <button class="score-button o-button">O (CPU)<br>0</button>
+        </div>
+        
+        
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <h2>YOU WON!</h2>
+            <p><span class="x-icon">X</span> TAKES THE ROUND</p>
+            <div class="button-container">
+                <button class="quit">QUIT</button>
+                <button class="next">NEXT ROUND</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

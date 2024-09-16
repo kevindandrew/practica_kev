@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: hsl(199,33%,15%);
+}
+
+.game-container {
+    width: 350px;
+    text-align: center;
+    background-color: none;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+/* player selecion */
+.player-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.xo-container {
+    display: flex;
+    gap: 5px; 
+    margin-right: 3rem;
+}
+
+.x-icon {
+    font-size: 30px;
+    color: #00d9d0; 
+    font-weight: 900;
+}
+
+.o-icon {
+    font-size: 30px;
+    color: #f7b529; 
+    font-weight: 900;
+}
+
+.player-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color:hsl(200,35%,19%);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-weight: 900;
+}
+.reload-button {
+    width: 60px;
+    height: 60px;
+    background-color: #cbd5e1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+   
+}
+
+.reload-button i {
+    font-size: 24px;
+    color: #2f3e46; 
+}
+/* game board */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(200,35%,19%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* game info */
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.score-button {
+    height: 75px;
+    width: 140px;
+    font-size: 16px;
+    color: hsl(199,33%,15%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.x-button {
+    background-color: hsl(178,60%,48%); 
+}
+
+.ties-button {
+    background-color: hsl(200,23%,72%); 
+}
+
+.o-button {
+    background-color: hsl(39,88%,58%); 
+}
+
+/* inicio del modal */
+
+.modal {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: hsl(200,35%,19%); 
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    font-size: .6rem;
+    color: hsl(200,23%,72%);
+    margin-bottom: 1rem;
+}
+
+.modal-content p {
+    color: hsl(178,60%,48%);
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.modal-content .button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content button {
+    color: hsl(208,35%,7%);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: .6rem;
+    transition: background-color 0.3s ease;
+    font-weight: 900;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+
+.quit{
+    background: hsl(200,23%,72%);
+    
+}
+.next{
+    background-color: hsl(39,88%,58%);
+}
