@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -7,7 +13,148 @@ body {
     margin: 0;
     background-color: hsl(199,33%,15%);
 }
+/* pantalla de loggin */
+.loggin {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+   
+    text-align: center;
+}
 
+.game-header {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.x-text {
+    color:  #00d9d0;  /* Color para la X */
+}
+
+.o-text {
+    color:#f7b529;  /* Color para la O */
+}
+
+/* Tarjeta de selección del jugador */
+.card {
+    padding: 20px;
+    background-color:hsl(198, 35%, 24%);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: hsl(200,23%,72%);
+    align-items: center;
+    justify-content: center;
+}
+
+.card h5 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(199,33%,15%);/* Fondo oscuro para el botón */
+    padding: 10px;
+    border-radius: 12px;
+}
+
+/* Estilos de los botones */
+.button-group .boton_1{
+    width:  130px;
+    height: 40px;
+    font-size: 2rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: hsl(199,33%,15%);
+    color: hsl(200,23%,72%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-group .boton_2{ /* este es el jugador selecionado */
+    width:  130px;
+    height: 40px;
+    font-size: 2rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: hsl(199,33%,15%);
+    color: hsl(200,23%,72%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seleccionado{
+    width:  130px;
+    height: 40px;
+    font-size: 2rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: hsl(200,23%,72%) !important;
+    color: hsl(199,33%,15%)!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card p {
+    margin-top: 1rem;
+    color: hsl(200,23%,72%);
+}
+
+/* Botones de modo de juego */
+.game-mode .boton_ga {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    font-weight: 900;
+}
+
+.CPUE {
+    background-color: hsl(39,88%,58%);
+    color: hsl(199,33%,15%);
+}
+
+.player {
+    background-color: hsl(178,60%,48%);
+    color: hsl(199,33%,15%);
+}
+
+/* Hover y focus para los botones */
+.btn:hover,
+.btn-new-game:hover {
+    opacity: 0.9;
+}
+
+.btn:focus,
+.btn-new-game:focus {
+    outline: none;
+}
+
+
+
+
+
+/* pantalla del juego */
 .game-container {
     width: 350px;
     text-align: center;
@@ -86,7 +233,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    color: #333;
+   
     border-radius: 5px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -95,6 +242,7 @@ body {
 /* game info */
 
 .button-container {
+    width: 345px;
     display: flex;
     gap: 1rem;
 }
@@ -141,6 +289,10 @@ body {
     background-color: hsl(200,35%,19%); 
     padding: 20px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -181,4 +333,8 @@ body {
 }
 .next{
     background-color: hsl(39,88%,58%);
+}
+
+.hidden{
+    display: none;
 }

@@ -3,13 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
     <script defer src="./main.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="game-container">
+    <div class="loggin">
+        <!-- Encabezado del juego -->
+        <div class="game-header">
+            <span class="x-text">X</span>
+            <span class="o-text">O</span>
+        </div>
+    
+        <!-- Tarjeta de selección de jugador -->
+        <div class="card">
+            <h5>PICK PLAYER 1'S MARK</h5>
+            <div class="button-group">
+            <button class="boton_1">X</button>
+            <button class="boton_2 seleccionado">O</button>
+                <!-- <button class="boton_1">X</button>
+                <div class="cont_bot2"><button class="boton_2">O</button>
+                </div> -->
+            </div>
+            <p>REMEMBER: X GOES FIRST</p>
+        </div>
+    
+        <!-- Botones de selección de modo de juego -->
+        <div class="game-mode">
+            <button class="boton_ga CPUE">NEW GAME (VS CPU)</button>
+            <button class="boton_ga player">NEW GAME (VS PLAYER)</button>
+        </div>
+    </div>
+    
+
+    <div class="game-container hidden">
 
         
         <div class="player-buttons">
@@ -48,7 +76,7 @@
         
     </div>
 
-    <div class="modal">
+    <div class="modal hidden">
         <div class="modal-content">
             <h2>YOU WON!</h2>
             <p><span class="x-icon">X</span> TAKES THE ROUND</p>
